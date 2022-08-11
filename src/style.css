@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  font-family: "Zen Kurenaido", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+a,
+span {
+  color: whitesmoke;
+}
+
+h1 h2 {
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  align-items: center;
+  background-color: lightsteelblue;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  margin: 0 5%;
+  width: auto;
+}
+
+.info {
+  border-radius: 50%;
+  color: whitesmoke;
+  left: 10px;
+  position: fixed;
+  top: 50%;
+}
+
+.info:hover::after {
+  content: "double click to clear color";
+}
+
+.header,
+.footer {
+  background-color: navy;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.header ul li {
+  margin: 0 10px;
+  padding: 1vh;
+}
+
+.select ul li {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.select ul li a {
+  color: black;
+}
+
+.select ul li:hover {
+  background-color: whitesmoke;
+  box-shadow: 5px 5px navy;
+  color: navy;
+  cursor: pointer;
+}
+
+.header ul li:hover {
+  background-color: darkgray;
+  color: black;
+  cursor: pointer;
+}
+
+.select ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.color-palette {
+  display: flex;
+}
+
+.clear {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.clear:hover {
+  background-color: whitesmoke;
+  box-shadow: 5px 5px navy;
+  color: navy;
+  cursor: pointer;
+}
+
+.clear:active {
+  transform: scaleX(0.8) scaleY(0.8);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.white {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+}
+
+.black {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+}
+
+.red {
+  background-color: red;
+  color: red;
+  height: 50px;
+  width: 50px;
+}
+
+.green {
+  background-color: green;
+  height: 50px;
+  width: 50px;
+}
+
+.blue {
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+}
+
+.white:hover,
+.black:hover,
+.red:hover,
+.green:hover,
+.blue:hover {
+  box-shadow: 2px 2px whitesmoke;
+  cursor: pointer;
+  transform: scaleX(1.1) scaleY(1.1);
+}
+
+.white:hover {
+  background-color: whitesmoke;
+}
